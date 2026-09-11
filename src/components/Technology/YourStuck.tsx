@@ -26,8 +26,12 @@ const YourStuck = ({ addStuck, setAddStuck }: YourStuckProps) => {
             transition: Bounce,
         })
     }
+
+    const handleRemoveAll = () => {
+        setAddStuck([]);
+    }
     return (
-        <div className="sticky top-18">
+        <div className="">
             <h2 className="text-2xl font-bold">Your Stuck</h2>
             <p className="text-gray-400">{addStuck.length <= 0 ? "No technologies selected yet." : `${addStuck.length} Technology selected`}</p>
             <div className="divider" />
@@ -44,6 +48,7 @@ const YourStuck = ({ addStuck, setAddStuck }: YourStuckProps) => {
                     </div>
                 )
             })}
+            {addStuck.length > 1 ? <button onClick={()=>handleRemoveAll()} className="btn btn-outline btn-error px-10 py-5 w-full rounded-xl mt-5">Remove All</button> : ""}
         </div>
     );
 };

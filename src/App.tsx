@@ -3,6 +3,7 @@ import Banner from "./components/Banner"
 import Nav from "./components/Nav"
 import Technology from "./components/Technology/Technology"
 import type { TechnologyType } from "./type/type"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Suspense fallback={<p>Loading....</p>}>
         <Technology technologyPromise={technologyPromise}/>
       </Suspense>
+      <Footer />
     </>
   )
 }
