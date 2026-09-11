@@ -17,6 +17,7 @@ const TechnologyCard = ({ tech, addStuck, setAddStuck }: TechnologyCardProps) =>
     const handleSelectedCard = () => {
         setSelectedCard(true);
         setAddStuck([...addStuck, tech]);
+        console.log(setAddStuck)
     }
 
     return (
