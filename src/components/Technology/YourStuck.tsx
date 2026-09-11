@@ -1,6 +1,8 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechnologyType } from "../../type/type";
-import TechnologyCard from "./TechnologyCard";
+import { Bounce, toast } from "react-toastify";
+import { ImCross } from "react-icons/im";
+
 
 interface YourStuckProps {
     addStuck: TechnologyType[]
@@ -8,20 +10,37 @@ interface YourStuckProps {
 }
 
 const YourStuck = ({ addStuck, setAddStuck }: YourStuckProps) => {
+
+    const handleRemoveStuck = (stucks: TechnologyType) => {
+        const restStuck = addStuck.filter((selectedStuck) => selectedStuck.id != stucks.id);
+        setAddStuck(restStuck);
+        toast.success("Stuck has been deleted successfully!", {
+            position: "bottom-right",
+            autoClose: 1000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        })
+    }
     return (
-        <div>
-            <h2>Your Stuck</h2>
-            <p className="text-gray-400">No technologies selected yet.</p>
+        <div className="sticky top-18">
+            <h2 className="text-2xl font-bold">Your Stuck</h2>
+            <p className="text-gray-400">{addStuck.length <= 0 ? "No technologies selected yet." : `${addStuck.length} Technology selected`}</p>
             <div className="divider" />
-            <p className="text-center text-gray-400 border p-4 rounded-2xl">Your stuck is empty.</p>
+            {addStuck.length <= 0 ? <p className="text-center text-gray-400 border p-4 rounded-2xl">Your stuck is empty.</p> : ""}
             {addStuck.map((stuck) => {
                 return (
-                    <div className="flex gap-4 my-3 items-center border rounded-xl">
+                    <div key={stuck.id} className="flex gap-4 my-3 items-center justify-between border rounded-xl">
                         <img className="w-10 pl-2" src={stuck.icon} alt="" />
                         <div className="p-3">
                             <h2 className="text-lg font-semibold">{stuck.name}</h2>
                             <p className="text-sm">{stuck.category}</p>
                         </div>
+                        <p onClick={() => handleRemoveStuck(stuck)} className="  text-red-700 rounded-2xl px-2 mr-2 text-sm cursor-pointer"><ImCross /></p>
                     </div>
                 )
             })}

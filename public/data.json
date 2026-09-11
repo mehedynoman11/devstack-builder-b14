@@ -74,7 +74,7 @@
     "name": "Spring Boot",
     "category": "Backend",
     "description": "A Java-based framework used to create stand-alone, production-grade Spring applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Spring-Boot.svg",
+    "icon": "../src/assets/springboot.png",
     "rating": 4.6,
     "difficulty": "Advanced",
     "badge": "Enterprise"
@@ -124,7 +124,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed superset of JavaScript that compiles to plain JavaScript.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Typescript.svg",
+    "icon": "../src/assets/typescript.png",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Essential"
@@ -224,7 +224,7 @@
     "name": "Visual Studio Code",
     "category": "Tools",
     "description": "A free, lightweight, and extensible source-code editor developed by Microsoft.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Visual-Studio-Code.svg",
+    "icon": "../src/assets/vscode.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"

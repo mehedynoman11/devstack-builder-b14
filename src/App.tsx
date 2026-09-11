@@ -1,4 +1,4 @@
-import { Suspense } from "react"
+import { Suspense, useState } from "react"
 import Banner from "./components/Banner"
 import Nav from "./components/Nav"
 import Technology from "./components/Technology/Technology"
@@ -7,12 +7,12 @@ import type { TechnologyType } from "./type/type"
 function App() {
 
   const technologyFetch = async (): Promise<TechnologyType[]> => {
-    const res = await fetch("../public/data.json");
+    const res = await fetch("/data.json");
     const data = res.json();
     return data;
   }
 
-  const technologyPromise = technologyFetch();
+  const [technologyPromise] = useState(() => technologyFetch());
 
   return (
     <>

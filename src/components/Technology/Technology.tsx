@@ -14,10 +14,6 @@ const Technology = ({ technologyPromise }: TechnologyProps) => {
 
     const [addStuck, setAddStuck] = useState<TechnologyType[]>([]);
 
-
-
-
-
     return (
         <div className="container mx-auto max-w-[1200px]">
             <div>
