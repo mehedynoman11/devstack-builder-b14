@@ -5,11 +5,8 @@ The application allows users to explore developer technologies and build their o
 
 🚀 Live Demo
 
-🔗 Live Website: [Add your live website link here]
+🔗 Live Website: https://devstack-builder-b14.netlify.app/
 
-📂 Repository
-
-🔗 GitHub: [Add your GitHub repository link here]
 
 ✨ Features
 🧩 Build Your Tech Stack — Select technologies and create your own developer stack.
