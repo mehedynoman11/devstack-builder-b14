@@ -34,6 +34,29 @@ const TechnologyCard = ({ tech, addStuck, setAddStuck }: TechnologyCardProps) =>
         // console.log(setAddStuck)
     }
 
+    const badgeColors: Record<string, { bg: string; text: string }> = {
+        "Popular": { bg: "#FFF7ED", text: "#EF8044" },
+        "Fast": { bg: "#FEF2F2", text: "#EF4444" },
+        "Essential": { bg: "#EFF6FF", text: "#3B82F6" },
+        "Containers": { bg: "#ECFEFF", text: "#06B6D4" },
+        "Easy to Learn": { bg: "#F0FDF4", text: "#22C55E" },
+        "Enterprise": { bg: "#FAF5FF", text: "#A855F7" },
+        "Lightweight": { bg: "#FEFCE8", text: "#CA8A04" },
+        "Batteries Included": { bg: "#F0FDFA", text: "#14B8A6" },
+        "Top SQL": { bg: "#EEF2FF", text: "#6366F1" },
+        "Memory Safe": { bg: "#FFF1F2", text: "#F43F5E" },
+        "Widely Used": { bg: "#F7FEE7", text: "#65A30D" },
+        "Classic": { bg: "#FDF4FF", text: "#C026D3" },
+        "Orchestration": { bg: "#F0F9FF", text: "#0284C7" },
+        "CI/CD": { bg: "#FFFBEB", text: "#D97706" },
+        "Design": { bg: "#FDF2F8", text: "#DB2777" },
+    };
+
+    const defaultBadgeColor = { bg: "#F3F4F6", text: "#4B5563" };
+
+    const getBadgeColor = (badge: string) => badgeColors[badge] ?? defaultBadgeColor;
+    const { bg, text } = getBadgeColor(tech.badge);
+
     return (
         <div
             className={`card bg-base-100 ${isSelected === true ? "border-2" : "border-none"
@@ -43,7 +66,7 @@ const TechnologyCard = ({ tech, addStuck, setAddStuck }: TechnologyCardProps) =>
                     src={tech.icon}
                     className="w-10"
                 />
-                <p className="bg-[#FFF7ED] text-[#EF8044] font-semibold rounded-2xl p-2">{tech.badge}</p>
+                <p style={{ backgroundColor: bg, color: text }} className=" font-semibold rounded-2xl p-2">{tech.badge}</p>
             </div>
             <div className="card-body">
                 <h2 className="card-title font-bold">{tech.name}</h2>

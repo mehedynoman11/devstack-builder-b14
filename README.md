@@ -8,27 +8,25 @@ The application allows users to explore developer technologies and build their o
 🔗 Live Website: https://devstack-builder-b14.netlify.app/
 
 
-✨ Features
-🧩 Build Your Tech Stack — Select technologies and create your own developer stack.
-📋 Selected Stack Management — View the technologies you have selected and easily remove them when needed.
-📱 Responsive Interface — The application works smoothly across desktop, tablet, and mobile devices.
-🛠️ Technologies Used
-⚛️ React.js
-🟨 JavaScript
-🎨 CSS / Tailwind CSS
-📦 React Hooks
-🔔 React Toast
-📄 JSON Data
-🧰 Git & GitHub
-🧩 React Concepts Used
+<h3>Features</h3>
+2. Build Your Tech Stack — Select technologies and create your own developer stack.
+3. Selected Stack Management — View the technologies you have selected and easily remove them when needed.
+4. Technologies Used
+5. React.js
+6. JavaScript
+7. TypeScript
+8. CSS / Tailwind CSS / Daisy Ui
+9. React Hooks
+10. React Toastify
+11. JSON Data
+12. React Concepts Used
+13. Fully Mobile Responsive, Laptop / Desktop Responsive
 
-This project helped me practice:
 
 Components
 Props
 State
 useState
-useEffect
 Conditional Rendering
 .map()
 Unique key props
@@ -41,7 +39,6 @@ React Questions & Answers
 
 JSX lets us write HTML-like code inside JavaScript.
 It makes React components easier to read and helps us create the UI more easily.
-<h1>DevStack Builder</h1>
 
 2. What is the difference between props and state?
 
@@ -60,7 +57,6 @@ When a user selects a technology, it is added to the stack using the state sette
 4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
 useEffect is used to perform side effects, such as loading data when a component starts.
-
 I used it to load the technology data from the JSON file.
 
 useEffect(() => {
