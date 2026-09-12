@@ -74,7 +74,7 @@
     "name": "Spring Boot",
     "category": "Backend",
     "description": "A Java-based framework used to create stand-alone, production-grade Spring applications.",
-    "icon": "../src/assets/springboot.png",
+    "icon": "https://img.icons8.com/color/1200/spring-logo.jpg",
     "rating": 4.6,
     "difficulty": "Advanced",
     "badge": "Enterprise"
@@ -124,7 +124,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A strongly typed superset of JavaScript that compiles to plain JavaScript.",
-    "icon": "../src/assets/typescript.png",
+    "icon": "https://images.icon-icons.com/2415/PNG/512/typescript_plain_logo_icon_146316.png",
     "rating": 4.9,
     "difficulty": "Intermediate",
     "badge": "Essential"
