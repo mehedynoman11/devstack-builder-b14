@@ -9,31 +9,33 @@ The application allows users to explore developer technologies and build their o
 
 
 <h3>Features</h3>
-2. Build Your Tech Stack — Select technologies and create your own developer stack.
-3. Selected Stack Management — View the technologies you have selected and easily remove them when needed.
-4. Technologies Used
-5. React.js
-6. JavaScript
-7. TypeScript
-8. CSS / Tailwind CSS / Daisy Ui
-9. React Hooks
-10. React Toastify
-11. JSON Data
-12. React Concepts Used
-13. Fully Mobile Responsive, Laptop / Desktop Responsive
-
-
-Components
-Props
-State
-useState
-Conditional Rendering
-.map()
-Unique key props
-Parent-to-child data passing
-Child-to-parent communication
-Event Handling
-
+<ul>
+<li>Build Your Tech Stack — Select technologies and create your own developer stack.</li>
+<li>Selected Stack Management — View the technologies you have selected and easily remove them when needed.</li>
+<li>Technologies Used</li>
+<li>React.js</li>
+<li>JavaScript</li>
+<li>TypeScript</li>
+<li>CSS / Tailwind CSS / Daisy Ui</li>
+<li>React Hooks</li>
+<li>React Toastify</li>
+<li>JSON Data</li>
+<li>React Concepts Used</li>
+<li>Fully Mobile Responsive, Laptop / Desktop Responsive</li>
+</ul>
+</br>
+<ol>
+  <li>Components</li>
+  <li>Props</li>
+  <li>State</li>
+  <li>useState</li>
+  <li>Conditional Rendering</li>
+  <li>.map()</li>
+  <li>Unique key props</li>
+  <li>Parent-to-child data passing</li>
+  <li>Child-to-parent communication</li>
+  <li>Event Handling</li>
+</ol>
 React Questions & Answers
 1. What is JSX, and why is it used in React?
 
