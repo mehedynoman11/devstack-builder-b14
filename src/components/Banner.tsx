@@ -7,7 +7,7 @@ const Banner = () => {
                 <div className="text-center sm:text-left">
                     <h1 className="text-3xl sm:text-4xl font-bold">Build Your Ideal <br />
                         <span className="text-[30px] sm:text-[40px] bg-linear-30 from-[#FD5526] via-[#C1239B] to-[#8537E3] bg-clip-text text-transparent">Development Stack</span></h1>
-                    <p className="mt-4 w-full sm:w-98">
+                    <p className="mt-4 w-full sm:w-98 text-gray-600">
                         Explore frontend, backend, database, and tooling options,
                         compare them side by side, and put together the stack that fits your
                         next project.

@@ -60,21 +60,21 @@ const TechnologyCard = ({ tech, addStuck, setAddStuck }: TechnologyCardProps) =>
     return (
         <div
             className={`card bg-base-100 ${isSelected === true ? "border-2" : "border-none"
-                } w-full p-8 shadow-sm cursor-pointer transition-all`}>
-            <div className="flex justify-between">
+                } w-full p-4 shadow-sm rounded-2xl transition-all`}>
+            <div className="flex justify-between items-center">
                 <img
                     src={tech.icon}
-                    className="w-10"
+                    className="w-10 mb-4 flex justify-start"
                 />
-                <p style={{ backgroundColor: bg, color: text }} className=" font-semibold rounded-2xl p-2">{tech.badge}</p>
+                <p style={{ backgroundColor: bg, color: text }} className="text-sm font-semibold rounded-2xl p-2">{tech.badge}</p>
             </div>
-            <div className="card-body">
-                <h2 className="card-title font-bold">{tech.name}</h2>
-                <p className="">{tech.description}</p>
+            <div className="w-full text-left text-sm">
+                <h2 className="card-title font-bold mb-2">{tech.name}</h2>
+                <p className="mb-6 md:h-16 wrap-break-word whitespace-normal text-gray-500">{tech.description}</p>
             </div>
-            <div className="flex justify-between gap-3 border-t border-gray-200">
-                <p className="text-sm">{tech.category}</p>
-                <p className="text-sm">{tech.difficulty}</p>
+            <div className="flex justify-between items-center gap-3 border-t pt-2 mb-2 border-gray-200">
+                <button className="btn btn-sm text-sm text-gray-500">{tech.category}</button>
+                <p className="text-[14px] text-gray-500">{tech.difficulty}</p>
                 <p className="text-sm flex gap-1 items-center">{tech.rating} <img className="w-4" src={star} /></p>
             </div>
             <button onClick={() => handleSelectedCard()} disabled={isSelected} className={`btn w-full rounded-xl ${isSelected === true ? "bg-[#c9ccd5]" : "bg-[#0A0F1D]"} text-white my-5`}>{isSelected === true ? "Added to Stuck" : "Add to Stuck"}</button>

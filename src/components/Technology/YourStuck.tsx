@@ -31,7 +31,7 @@ const YourStuck = ({ addStuck, setAddStuck }: YourStuckProps) => {
         setAddStuck([]);
     }
     return (
-        <div className="">
+        <div className="card p-4">
             <h2 className="text-2xl font-bold">Your Stuck</h2>
             <p className="text-gray-400">{addStuck.length <= 0 ? "No technologies selected yet." : `${addStuck.length} Technology selected`}</p>
             <div className="divider" />
